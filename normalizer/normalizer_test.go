@@ -15,8 +15,7 @@ func TestNormalizer(t *testing.T) {
 	for _, i := range data {
 		temp := NormalizeNumber(i[0])
 		if(temp != i[1]) {
-			t.Errorf("Nomralization failed : %s != %s\n", temp, i[1])
-			// fmt.Printf("Nomralization failed : %s != %s\n", temp, i[1])
+			t.Errorf("Nomralization failed : \"%s\" != \"%s\"\n", temp, i[1])
 		}
 	}
 
